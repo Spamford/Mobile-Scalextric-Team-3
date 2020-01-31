@@ -1,8 +1,18 @@
 <uiview>
+  
+  <form>
   <div class="onboarding">
     <h2>Onboarding</h2>
-    <p1>Welcome, please enter a name then press to join queue<br><br>
-    Name: ***<br><br></p1>
+    <p1>Please enter a three letter nick name <br><br>
+    </p1>
+     <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="nickname" placeholder="Enter Nickname" name="nickname">
+    
+       
     <button ng-click="$state.go('queue')">Join queue</button>
+       
+       
+       </form>       
   </div>
 </uiview>
