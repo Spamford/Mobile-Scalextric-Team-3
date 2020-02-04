@@ -14,6 +14,17 @@ button {
   font-size: 100%;
 }
 
+#wrapper{
+	background-color:#e2fdff;
+	height:100%;
+	width:75%;
+	border: solid white;
+	margin: 0 auto;
+	clear: both;
+}
+
+
+
 button:hover {
   background-color: #da190b;/*dark red*/
 }
