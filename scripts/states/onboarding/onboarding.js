@@ -16,3 +16,9 @@
             $urlRouterProvider.otherwise('/onboarding');
         });
 })();
+
+<script>
+    function name() {
+    
+}
+</script>
