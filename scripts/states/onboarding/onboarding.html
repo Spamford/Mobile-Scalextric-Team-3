@@ -1,16 +1,16 @@
 <uiview>
   
-  <form>
+  <form method="GET">
   <div class="onboarding">
     <h2>Onboarding</h2>
     <p1>Please enter a three letter nick name <br><br>
     </p1>
      <div class="form-group">
       <label for="Name">Nickname:</label>
-      <input type="submit" name="nickname">
+      <input type="text" name="nickname">
     
        
-    <button ng-click="$state.go('queue')">Join queue</button>
+    <input type="submit" ng-click="$state.go('queue')">
        
     </div>
        
