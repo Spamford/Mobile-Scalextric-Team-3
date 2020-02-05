@@ -23,6 +23,14 @@ button {
 	clear: both;
 }
 
+header{
+	background-color: #4bc3cc;
+	text-align: center;
+	padding:25px;
+	border: solid white;
+	
+}
+
 
 
 button:hover {
