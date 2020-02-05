@@ -1,20 +1,31 @@
 <uiview>
   
-  <form onsubmit="return name();" method="post">
+  <form onsubmit="return name();">
   <div class="onboarding">
     <h2>Onboarding</h2>
     <p1>Please enter a three letter nick name <br><br>
     </p1>
      <div class="form-group">
       <label for="Name">Nickname:</label>
-      <input type="text" id="name" name="nickname">
+      <input type="text" id="nickname" name="nickname">
     
        
-    <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
+    <input type="submit" value="Join Queue" >
        
     </div>
        
        
-       </form>       
+       </form>  
+    <script>
+      
+      function name() {
+        
+        var name = document.GetElementById('name').value;
+        
+        document.write("<p>Nickname</p>");
+        document.write(name);
+      }
+      
+    </script>
   </div>
 </uiview>
