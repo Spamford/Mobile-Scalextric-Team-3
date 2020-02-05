@@ -1,31 +1,36 @@
 <uiview>
   
-  <form onsubmit="return name();" method="post">
+  <script type="text/javascript">
+
+        // Called on form's `onsubmit`
+        function nickname() {
+            // Getting the value of your text input
+            var name = document.getElementById("name").value;
+
+            // Storing the value above into localStorage
+            localStorage.setItem("name", name);
+
+            return true;
+        }
+
+    </script> 
+  
+  <form name="nameform" onsubmit="name();" action="$state.go('queue');">
   <div class="onboarding">
     <h2>Onboarding</h2>
     <p1>Please enter a three letter nick name <br><br>
     </p1>
      <div class="form-group">
       <label for="Name">Nickname:</label>
-      <input type="text" id="nickname" name="name">
+      <input type="text" id="myname" name="name">
     
        
-    <input type="button" value="Join Queue" ng-click="$state.go('queue'); name()">
+    <input type="submit" value="Join Queue">
        
     </div>
        
        
        </form>
-    
-      <script type="text/javascript">
-      
-      function name() {
-        
-        var name = document.GetElementById('name').value;
-        
-        document.write("<p>Nickname</p>");
-        document.write(name);
-      }
       
     </script>
   </div>
