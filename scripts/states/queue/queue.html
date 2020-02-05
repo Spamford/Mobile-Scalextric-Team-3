@@ -1,4 +1,18 @@
 <uiview>
+  <script>
+
+    // Called on body's `onload` event
+    function init() {
+        // Retrieving the text input's value which was stored into localStorage
+        var name = localStorage.getItem("name");
+
+        // Writing the value in the document
+        document.write("passed value = "+name);
+    }
+
+</script>
+  <body>
+  <body onload="init();">
   <div class="queue">
     <h2>Queue</h2><br>
     <p1>You are in the queue please wait...<br></p1>
@@ -8,4 +22,5 @@
     </ul>
     <button ng-click="$state.go('onboarding')">Exit</button>
   </div>
+  </body>
 </uiview>
