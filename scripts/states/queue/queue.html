@@ -3,14 +3,17 @@
 
     // Called on body's `onload` event
     function init() {
-        //Retrieving the text input's value which was stored into localStorage
-        var name = localStorage.getItem("name");
+        //Retrieving the text input's value which was stored into sessionStorage
+        var name = sessionStorage.getItem("name");
     }
 
 
 </script>
   <body>
   <body onload="init();">
+  <script type="text/javascript">
+      document.write(name)
+  </script>
   <div class="queue">
     <h2>Queue</h2><br>
     <p1>You are in the queue please wait...<br></p1>
