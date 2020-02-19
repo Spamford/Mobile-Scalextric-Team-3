@@ -1,21 +1,14 @@
 <uiview>
-  <script>
-
-    // Called on body's `onload` event
-    function init() {
-        //Retrieving the text input's value which was stored into sessionStorage
-        var name = sessionStorage.getItem("name");
-    }
-
-
-</script>
   <body>
-  <body onload="init();">
-  <script type="text/javascript">
-      document.write(name)
-  </script>
   <div class="queue">
+    <div id="test">
+      <script type="text/javascript">
+      document.getElementById('test').innerHTML = 
+     "Nickname: " + sessionStorage.getItem('nickname');
+      </script>
+    </div>
     <h2>Queue</h2><br>
+    
     <p1>You are in the queue please wait...<br></p1>
     <ul>
       <a ui-sref="singleplayer"><li>Singleplayer</li></a>
