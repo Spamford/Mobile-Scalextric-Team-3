@@ -1,10 +1,14 @@
 <uiview>
-  <body>
+  <head>
+  <script type="text/javascript" src='queue.js'> </script>
+  </head>
+  <body onload="weaponBox()">
   <div class="queue">
 
     <div id="test">
 
       <script type="text/javascript">
+
       document.getElementById('test').innerHTML = 
      "Nickname: " + sessionStorage.getItem('nickname');
 
@@ -12,25 +16,10 @@
 
     </div>
 
-    <div id="weapon">
+<div id="weapon">
+  
+</div>
 
-      <script type="text/javascript">
-      
-    
-      var myArray = [
-      "Oil Slick",
-      "Smart Bomb",
-      "Puncture"
-    ];
-    
-    var randomWeapon = myArray[Math.floor(Math.random()*myArray.length)]; 
-        
-    
-      document.getElementById('weapon').innerHTML = randomWeapon;
-    
-    </script>
-    
-    </div>
     <h2>Queue</h2><br>
     
     <p1>You are in the queue please wait...<br></p1>
