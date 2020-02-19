@@ -1,4 +1,8 @@
-angular.module('myApp', ['ui.router']);
+angular.module('myApp', [
+    'ui.router',
+    'app.queueState',
+    'app.onboardingState',
+]);
 
 angular.module('myApp').config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
     // sets default state
@@ -13,6 +17,7 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider', function(
         .state('queue', {
             url: '/queue',
             templateUrl : 'scripts/states/queue/queue.html',
+            controller: "queueCtrl as vm",
             cache: false
     })
         .state('race', {
