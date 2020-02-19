@@ -1,7 +1,19 @@
 <uiview>
   <div class="lose">
+    <div id="test">
+      <script type="text/javascript">
+      document.getElementById('test').innerHTML = 
+     "Nickname: " + sessionStorage.getItem('nickname');
+      </script>
+    </div>
     <h2>You Lose</h2>
-    <p1>Better luck next time<br>Here are your stats...</p1><br><br>
+    <div id="lose">
+      <script>
+      document.getElementById('lose').innerHTML = 
+       "Better luck next time " + sessionStorage.getItem('nickname');
+      </script>
+      </div>
+    <p>Here are your stats...</p1><br><br>
     <button ng-click="$state.go('onboarding')">Exit</button>
   </div>
 </uiview>

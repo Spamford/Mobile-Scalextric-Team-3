@@ -1,5 +1,11 @@
 <uiview>
   <div class="casual">
+    <div id="test">
+      <script type="text/javascript">
+      document.getElementById('test').innerHTML = 
+     "Nickname: " + sessionStorage.getItem('nickname');
+      </script>
+    </div>
     <h2>Casual Mode</h2>
     <p1>Vroom vroom<br><br></p1>
     <button ng-click="$state.go('challenge')">Challenge</button>

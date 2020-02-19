@@ -6,23 +6,20 @@
         function nickname() {
             // Getting the value of your text input
             var name = document.getElementById("name").value;
-
-            // Storing the value above into localStorage
-            sessionStorage.setItem("name", name);
-
-            return true;
+            // Storing the value above into sessionStorage
+            sessionStorage.setItem("nickname", name);
         }
 
     </script> 
   
-  <form name="nickname" onsubmit="nickname();">
+  <form name="nicknameinput" onsubmit="nickname();">
   <div class="onboarding">
     <h2>Onboarding</h2>
     <p1>Please enter a three letter nick name <br><br>
     </p1>
      <div class="form-group">
       <label for="Name">Nickname:</label>
-      <input type="text" id="nickname" name="name" maxlength="3">
+      <input type="text" id="name" name="name" maxlength="3">
     
        
     <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
