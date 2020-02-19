@@ -1,11 +1,35 @@
 <uiview>
   <body>
   <div class="queue">
+
     <div id="test">
+
       <script type="text/javascript">
       document.getElementById('test').innerHTML = 
      "Nickname: " + sessionStorage.getItem('nickname');
+
       </script>
+
+    </div>
+
+    <div id="weapon">
+
+      <script type="text/javascript">
+      
+    
+      var myArray = [
+      "Oil Slick",
+      "Smart Bomb",
+      "Puncture"
+    ];
+    
+    var randomWeapon = myArray[Math.floor(Math.random()*myArray.length)]; 
+        
+    
+      document.getElementById('weapon').innerHTML = randomWeapon;
+    
+    </script>
+    
     </div>
     <h2>Queue</h2><br>
     
