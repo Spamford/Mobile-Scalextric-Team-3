@@ -1,48 +1,35 @@
 <uiview>
+  
+  <script type="text/javascript">
 
-    <script type="text/javascript">
         // Called on form's `onsubmit`
         function nickname() {
             // Getting the value of your text input
             var name = document.getElementById("name").value;
-
-            // Storing the value above into localStorage
-            sessionStorage.setItem("name", name);
-
-            return true;
+            // Storing the value above into sessionStorage
+            sessionStorage.setItem("nickname", name);
         }
-    </script>
 
-    <script type="text/javascript">
-        var myWeapons = [
-            "Oil Slick",
-            "Smart Bomb",
-            "Puncture"
-        ];
-
-        var randomWeapon = myWeapons[Math.floor(Math.random() * myArray.length)];
-    </script>
-
-    <form name="nickname" onsubmit="nickname();">
-        <div class="onboarding">
-            <h2>Onboarding</h2>
-            <p1>Please enter a three letter nick name <br><br>
-            </p1>
-            <div class="form-group">
-                <label for="Name">Nickname:</label>
-                <input type="text" id="nickname" name="name" maxlength="3">
-
-
-                <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
-
-            </div>
-
-            <script type="text/javascript">
-                document.body.innerHTML = randomWeapon;
-            </script>
-
-
-    </form>
-
+    </script> 
+  
+  <form name="nicknameinput" onsubmit="nickname();">
+  <div class="onboarding">
+    <h2>Onboarding</h2>
+    <p1>Please enter a three letter nick name <br><br>
+    </p1>
+     <div class="form-group">
+      <label for="Name">Nickname:</label>
+      <input type="text" id="name" name="name" maxlength="3">
+    
+       
+    <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
+       
     </div>
+       
+       
+       </form>
+      
+    </script>
+  </div>
 </uiview>
+
