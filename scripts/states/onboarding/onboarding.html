@@ -1,7 +1,6 @@
 <uiview>
-  
-  <script type="text/javascript">
 
+    <script type="text/javascript">
         // Called on form's `onsubmit`
         function nickname() {
             // Getting the value of your text input
@@ -12,26 +11,39 @@
 
             return true;
         }
-
-    </script> 
-  
-  <form name="nickname" onsubmit="nickname();">
-  <div class="onboarding">
-    <h2>Onboarding</h2>
-    <p1>Please enter a three letter nick name <br><br>
-    </p1>
-     <div class="form-group">
-      <label for="Name">Nickname:</label>
-      <input type="text" id="nickname" name="name" maxlength="3">
-    
-       
-    <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
-       
-    </div>
-       
-       
-       </form>
-      
     </script>
-  </div>
+
+    <script>
+        var myWeapons = [
+            "Oil Slick",
+            "Smart Bomb",
+            "Puncture"
+        ];
+
+        var randomWeapon = myWeapons[Math.floor(Math.random() * myArray.length)];
+    </script>
+
+    <form name="nickname" onsubmit="nickname();">
+        <div class="onboarding">
+            <h2>Onboarding</h2>
+            <p1>Please enter a three letter nick name <br><br>
+            </p1>
+            <div class="form-group">
+                <label for="Name">Nickname:</label>
+                <input type="text" id="nickname" name="name" maxlength="3">
+
+
+                <input type="submit" value="Join Queue" ng-click="$state.go('queue')">
+
+            </div>
+
+            <script>
+                document.body.innerHTML = randomWeapon;
+            </script>
+
+
+    </form>
+
+    </script>
+    </div>
 </uiview>
