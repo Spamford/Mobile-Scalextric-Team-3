@@ -12,6 +12,18 @@
 
     </script> 
   
+  <script>
+  
+  var myWeapons = [
+  "Oil Slick",
+  "Smart Bomb",
+  "Puncture"
+];
+
+var randomWeapon = myWeapons[Math.floor(Math.random()*myArray.length)];
+    
+</script>
+  
   <form name="nicknameinput" onsubmit="nickname();">
   <div class="onboarding">
     <h2>Onboarding</h2>
@@ -28,8 +40,12 @@
        
        
        </form>
-      
+    
+    <script>
+    document.body.innerHTML = randomItem;
     </script>
+      
+
   </div>
 </uiview>
 
