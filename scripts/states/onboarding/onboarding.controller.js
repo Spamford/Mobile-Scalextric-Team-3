@@ -5,9 +5,7 @@
         .module('app.onboardingState')
         .controller('onboardingCtrl', onboardingCtrl);
 
-    onboardingCtrl.$inject = [
-        '$state'
-        ];
+    onboardingCtrl.$inject = [];
     
     function onboardingCtrl(
         $state,
@@ -20,4 +18,3 @@
         }             
     }
 })();
-

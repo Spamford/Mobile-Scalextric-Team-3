@@ -2,6 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('app.queueState', []);
+    angular
+    .module('app.queueState', []);
 
 })();

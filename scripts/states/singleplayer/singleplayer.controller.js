@@ -2,13 +2,13 @@
 
     'use strict';
 
-    var app = angular.module('app.singleplayerState');
+    angular
+    .module('app.singleplayerState')
+    .controller('singleplayerCtrl', singleplayerCtrl);
 
-    app.controller('singleplayerCtrl', singleplayerCtrl);
+    singleplayerCtrl.$inject = [];
 
-    singleplayerCtrl.$inject = [ '$scope' ];
-
-    function singleplayerCtrl($scope) {
+    function singleplayerCtrl() {
         var vm = angular.extend(this, {});
         return vm;
     }

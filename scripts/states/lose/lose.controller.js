@@ -1,10 +1,10 @@
 (function () {
 
     'use strict';
-
-    var app = angular.module('app.loseState');
-
-    app.controller('loseCtrl', winCtrl);
+    
+    angular
+    .module('app.loseState')
+    .controller('loseCtrl', loseCtrl);
 
     loseCtrl.$inject = [];
 

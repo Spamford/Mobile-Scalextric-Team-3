@@ -2,9 +2,9 @@
 
     'use strict';
 
-    var app = angular.module('app.winState');
-
-    app.controller('winCtrl', winCtrl);
+    angular
+    .module('app.winState')
+    .controller('winCtrl', winCtrl);
 
     winCtrl.$inject = [];
 

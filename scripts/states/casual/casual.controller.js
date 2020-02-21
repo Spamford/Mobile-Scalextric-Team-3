@@ -2,9 +2,9 @@
 
     'use strict';
 
-    var app = angular.module('app.casualState');
-
-    app.controller('casualCtrl', casualCtrl);
+    angular
+    .module('app.casualState')
+    .controller('casualCtrl', casualCtrl);
 
     casualCtrl.$inject = [];
 
