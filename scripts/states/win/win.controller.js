@@ -6,7 +6,12 @@
     .module('app.winState')
     .controller('winCtrl', winCtrl);
 
-    winCtrl.$inject = [];
+    winCtrl.$inject = [
+        '$rootScope',
+        '$state',
+        'mqttService',
+        'brokerDetails'
+    ];
 
     function winCtrl() {
         var vm = angular.extend(this, {});

@@ -8,11 +8,11 @@
     onboardingCtrl.$inject = [
         '$rootScope',
         '$state',
-        /*'mqttService',*/
+        'mqttService',
         'brokerDetails'
     ];
     
-    function onboardingCtrl($rootScope, $state, /*mqttService,*/ brokerDetails) {
+    function onboardingCtrl($rootScope, $state, mqttService, brokerDetails) {
         var vm = this;
 
         vm.channels = Array.apply(null, {
@@ -21,7 +21,7 @@
         vm.channel = 0;
         
         console.log(brokerDetails);
-        /*
+        
     vm.go = go;
 
     function go(valid) {
@@ -56,7 +56,7 @@
 
             },mqttOptions)
         }
-    }*/
+    }
 
         
         vm.goToQueue = function(){            
