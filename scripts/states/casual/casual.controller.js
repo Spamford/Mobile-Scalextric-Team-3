@@ -118,7 +118,6 @@
                 mqttService.publish(throttleTopic, JSON.stringify(payload));
             }
         })
-        //Car control ends here
     
     }
     
