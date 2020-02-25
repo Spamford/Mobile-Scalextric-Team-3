@@ -17,6 +17,7 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider', function(
     $stateProvider
         .state('onboarding', {
             url: '/onboarding',
+            Url: '/onboarding?uuid&brokerHost&brokerPort&username&password&ssl',
             templateUrl : 'scripts/states/onboarding/onboarding.html',
             controller: "onboardingCtrl as vm",
             cache: false
